@@ -71,7 +71,7 @@ while z >= 0:
     u_term = math.sqrt((2 * m * g) / (air_density * A * Cd))
 
     # Calculate drag force F and k using air density at altitude y
-    F = (1 / 2) * air_density * u ** 2 * Cd * A
+    F = (1 / 2) * air_density * (u - vx) ** 2 * Cd * A
     k = (air_density * A * Cd) / (2 * m)
 
     # Calculate acceleration in x and y directions
